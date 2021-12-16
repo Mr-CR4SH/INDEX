@@ -1,0 +1,257 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Hacked By Mr CR4SH">
+<meta name="keywords" content="Hacked By Mr CR4SH">
+<title>Hacked By Mr CR4SH</title>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+<meta name="Description" content="xNot_Found">
+<body bgcolor="#000000" background =><div class='CenterDiv'><center><SCRIPT>
+
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<b><font face='jolly lodger' size='40' color='hotpink'></a><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font></b>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= '<[ + ] Hacked By Mr.CR4SH [ + ]>';
+</script><span class='newclass'>
+<script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script></span>
+
+
+<script language="JavaScript">
+
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(7);
+tb5_messages[0] = "Your sites";
+tb5_messages[1] = "Has been Hacked";
+tb5_messages[2] = "We Are Indonesian Hacker";
+tb5_messages[3] = "Hacked By Mr.CR4SH";
+tb5_messages[4] = "Security Down";
+tb5_messages[5] = "You Can't Stop Us";
+tb5_messages[6] = "Hacked By Mr.CR4SH";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 30;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+ 
+</script>
+
+<style>
+
+body{
+	background:black;
+}
+#font{
+	font-family:Courier;
+	color:white;
+	position:absolute;
+	left:0;
+	left:0;
+	right:0;
+	top:10%;
+}
+img {
+	opacity:0.5;-webkit-transition:all 250ms ease;-moz-transition:all 250ms ease;-o-transition:all 250ms ease;transition:all 250ms ease;
+	margin-top:-10px;
+}
+img:hover{	
+	opacity:1
+}
+hr {
+	width:250px;
+}
+a{
+	color:white;
+	text-decoration:none
+}
+a.hover{
+	color:white;
+}
+</style>
+</head>
+<script>
+alert('Mr.CR4SH WAS HERE') 
+alert('I AM SORRY ADMIN')
+alert('CLICK OK')
+</script>
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+</body>
+<body><center><br>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'>
+<div id='font' align="center">
+<div id=''>
+<br>
+<img src="https://1.bp.blogspot.com/-r9z7gno_Kmc/WKzuDapzzkI/AAAAAAAAAfs/iEco8UwEuiMxvovwEGuLcZkO0AN8mfxBQCLcB/s1600/logo%2B5.jpg"width="350"height="350">
+<br>
+<font color='#9E9E9E' size="10">&nbsp&nbsp&nbsp&nbsp; Hacked By<font color='red'> Mr<font color='#FFFFFF'> CR4SH</font>
+<font style="color:red;text-shadow:#FF0099 0px 0px 10px" size="8"> &nbsp;&nbsp;&nbsp;&nbsp;<br>[ + ] Mr.CR4SH WAS HERE [ + ]<br><font>
+<font style="color:white;text-shadow:#FF0099 0px 0px 10px" size="8"> &nbsp;&nbsp;&nbsp;&nbsp;<br>MESSAGE<br><font>
+</font>
+<p><b><font style="color:green;text-shadow:#000 0px 0px 3px">Sorry Admin, I Was On Your System. By </font><span style="font-family:Iceland;color:red;text-shadow:#000 0px 0px 3px">Anonymous,</span>
+			<font style="color:green;text-shadow:#000 0px 0px 3px">PLEASE </font><font style="color:blue;text-shadow:#000 0px 0px 3px">CHECK AND PATCH</font>
+			<font style="color:green;text-shadow:#000 0px 0px 3px"> YOUR SECURITY !</font><br><font style="color:yellow;text-shadow:#000 0px 0px 3px">#*#*#*#</font>
+		    </p>
+</div>
+<table width=820px>
+<td align=center>
+<span style='font: 15px Courier;size:15px;color:#9E9E9E;'>
+<strong>
+<marquee behavior="alternate" scrollamount="10" style="border:1px solid;" width="70%"><font color="white" face="courier"><a href="https://chat.whatsapp.com/">-=|[ + ] TEAM TUBRUK [ + ]|=-</a></center></font></marquee></div>
+
+<br>
+<div style="text-shadow: 0px 0px 10px green;"><span style="color: white;"><font face="transformers"><b>MESSAGE : <marquee scrollamount="5" direction="left" width="50%"><span style="color: yellow;"> <span style="color: ;">I Found A Vulnerability On This Website, Im Here Only To Tell You That This Website IS Not Save :V<span style="color: green;"></b></marquee></font></div><script type="text/rocketscript">/*<![CDATA[*/new TypingText(document.getElementById("message"), 90, function(i){ var ar= new Array("_", " ", "_", " "); return "" +ar[i.length % ar.length]; });//Type out examples:TypingText.runAll();/*]]>*/</script>
+</br>
+
+<a href="<a href="https://api.whatsapp.com/">Mr.CR4SH</a>
+
+<p />
+<
+<
+<
+<font color="red" size="5">Copyright &copy; Mr CR4SH</font></a>
+>
+>
+>
+<p />
+<embed src="https://www.youtube.com/v/1-xGerv5FOk&autoplay=1&start=0" type="application/x-shockwave-flash" wmode="transparent" width="0" height="0"></embed>
+<iframe width="0" height="0" src="https://f.top4top.io/m_1685p9roz0.mp3" frameborder="0" allowfullscreen></iframe>
+
+<center>
+<audio autoplay="autoplay" controls="controls" src="https://f.top4top.io/m_1685p9roz0.mp3" type="audio/mpeg"></audio>
+</center>
+
+</body>
+</html>
+<style type="text/css">body{background:url(https://3.bp.blogspot.com/-5Ma3lIrkPCk/W5p-c6bBmsI/AAAAAAAAALw/Gh-OIZLSiJc3QRCyShSytMNAtpUQoSSXQCLcBGAs/s320/Gambar%2BAnimasi%2BPetir%2BBergerak%2BWallpaper%2BKilat%2BMerah%2BLuar%2BBiasa.gif) repeat center center fixed black;}</style>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+<body bgcolor="#000000" background =><div class='CenterDiv'><center><SCRIPT>
